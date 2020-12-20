@@ -1,6 +1,17 @@
 import React from 'react';
 
 class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            markdown: '',
+        };
+    }
+
+    updateMarkdown(markdown) {
+        this.setState({ markdown });
+    }
+
     render() {
         return (
             <div className='container'>
@@ -9,7 +20,15 @@ class App extends React.Component {
                 <div className='editor-container'>
                     <h2>Editor</h2>
                     <div className='mark-input'>
-                        <textarea id='editor' cols='100' rows='20'></textarea>
+                        <textarea
+                            id='editor'
+                            cols='100'
+                            rows='20'
+                            value={this.state.markdown}
+                            onChange={(e) => {
+                                this.updateMarkdown(e.target.value);
+                            }}
+                        ></textarea>
                     </div>
                 </div>
 
