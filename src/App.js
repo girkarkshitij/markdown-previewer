@@ -1,4 +1,5 @@
 import React from 'react';
+let marked = require('marked');
 
 class App extends React.Component {
     constructor(props) {
@@ -34,7 +35,12 @@ class App extends React.Component {
 
                 <div className='previewer-container'>
                     <h2>Previewer</h2>
-                    <div id='preview'></div>
+                    <div
+                        id='preview'
+                        dangerouslySetInnerHTML={{
+                            __html: marked(this.state.markdown),
+                        }}
+                    ></div>
                 </div>
             </div>
         );
