@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css';
 let marked = require('marked');
 
 class App extends React.Component {
