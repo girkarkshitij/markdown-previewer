@@ -1,6 +1,10 @@
 import React from 'react';
 import './style.css';
-let marked = require('marked');
+const marked = require('marked');
+
+marked.setOptions({
+    breaks: true,
+});
 
 class App extends React.Component {
     constructor(props) {
