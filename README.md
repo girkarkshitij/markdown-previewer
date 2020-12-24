@@ -5,7 +5,7 @@ The goal is to create a dynamic Markdown previewer using React. This app will us
 
 ## Live Application URL
 
-[https://github.com/girkarkshitij/markdown-previewer](https://github.com/girkarkshitij/markdown-previewer)
+[https://girkarkshitij.github.io/markdown-previewer/](https://girkarkshitij.github.io/markdown-previewer/)
 
 ## Usage
 
